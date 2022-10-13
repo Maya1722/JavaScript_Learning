@@ -16,6 +16,9 @@ var result=str.length;
 console.log("length of given string:",result);
 var total=str.split(" ");
 console.log(total);
+var strWe=total.reverse();
+console.log(strWe);
+
 console.log("==============================");
 var total_word=total.length;
 console.log("total words in given string:",total_word);
