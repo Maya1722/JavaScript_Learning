@@ -41,8 +41,7 @@ var stringCheck=function(arg){
       }
 }
 stringCheck(14);
-console.log("=====================04===============");
-var checkString=function(){
+console.log("=====================04===============");var checkString=function(){
 
     var str="javascript language";
     var strResult=str.startsWith("java");
