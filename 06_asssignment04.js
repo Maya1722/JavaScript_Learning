@@ -11,69 +11,46 @@ var giveResult = function () {
 }
 giveResult();
 
-console.log("=============print sum of square of number==========");
+console.log("=============print sum of qube of number==========");
 var giveTest = function () {
-   var add = 0;
+   var sum = 0;
    for (let index = 0; index <= 5; index++) {
-      add = add * add + index;
+      sum= sum + index*index*index;
    }
-   console.log(`addition is:${add}`);
+   console.log(`addition is:${sum}`);
 }
 giveTest();
-
 console.log("=========even position in given string=======");
 
-function evenPositionedChars1(){
+function evenPositionedChars(myString){
    
-   var str1 = "hard work is always pay back";
-   var totalChar = str1.length;
-   for (let index = 0; index <totalChar; index++) {
-       if (index%2==0) {
-           var charAt = str1.charAt(index);
-           console.log(charAt); 
+   var result=" ";
+   for (let index = 0; index < myString.length; index++) {
+           var char = myString.charAt(index);
+           if(index%2==0 && char !=" "){
+           result=result+char;
+    
        }  
    }
+   console.log(result);
 }
-evenPositionedChars1();
-console.log("=======================================");
+evenPositionedChars("Hard work is always pay back");
+evenPositionedChars("soon i will be  angular It champ");
 
-function evenPositionedChars2(){
-
-   var str2 = "soon i will angular it champ";
-   var totalChar = str2.length;
-   for (let index = 0; index <totalChar; index++) {
-       if (index%2==0) {
-           var charAt = str2.charAt(index);
-           console.log(charAt); 
-       }  
-   }
-}
-evenPositionedChars2();
 console.log("=======================odd position in given string===========");
 
-function oddPositionedChars3(){
+function oddPositionedChars(myString){
 
-   var str1 = "hard work is always pay back";
-   var totalChar = str1.length;
-   for (let index = 0; index <totalChar; index++) {
-       if (index%2!=0) {
-           var charAt = str1.charAt(index);
-           console.log(charAt); 
-       }  
+   var result="";
+   for (let index = 0; index <myString.length; index++) {
+           var char = myString.charAt(index);
+           if (index%2!==0 && char !=" ") {
+           result=result+char;
+       }
    }
-}
-oddPositionedChars3();
-console.log("======================================================");
-function oddPositionedChars4(){
+   console.log(result);
 
-   var str2 = "soon i will angular it champ";
-   var totalChar = str2.length;
-   for (let index = 0; index <totalChar; index++) {
-       if (index%2!=0) {
-           var charAt = str2.charAt(index);
-           console.log(charAt); 
-       }  
-   }
 }
-oddPositionedChars4();
+oddPositionedChars("Hard work is always pay back");
+oddPositionedChars("soon i will be Angular IT champ");
 

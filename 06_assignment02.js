@@ -15,7 +15,7 @@ for (let index = 50; index >=40; index--){
 
 console.log("===WAP to print number 15 odd number==========");
 
-for (let index = 1; index < 30; index += 2) {
+
     if (index % 2 != 0) {
         console.log(index);
 
